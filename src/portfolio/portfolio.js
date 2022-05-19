@@ -34,7 +34,7 @@ export default function Portfolio({ slides }) {
         <div className="intestazione flex">
           <h2>{engb_text.portfolio.title}</h2>
           <hr />
-          <img src="./images/similmenu-green.svg" alt="" />
+          <img src="./img/similmenu-green.svg" alt="" />
         </div>
 
         <div className="slider">
@@ -45,7 +45,8 @@ export default function Portfolio({ slides }) {
                   {index === current && (<p>{slide.text}</p>)}
                 </div>
                 <div className={index === current ? "slide active" : "slide"} key={index}>
-                  {index === current && (<img src={slide.image} alt={slide.alt}/>)}
+                  {/* {index === current && (<img src={slide.image} alt={slide.alt}/>)} */}
+                  {index === current && (<div class={slide.image}/>)}
                   <div className='arrows'>
                     <div className='arrow left-arrow' onClick={prevSlide}>
                       <i class="fa-solid fa-angle-left"></i>

@@ -40,21 +40,25 @@
         position: relative;
         /* padding: 0 10vw 0 10vw; */
         .slider-text{
+          background-color: $green;
           p{
             font-size: $paragrafi_sezioni;
             text-transform: capitalize;
+            color: $white;
           }
         }
         .slide {
           width: 100%;
-          height: 100%;
+          height: 55vh;
           display: none;
           overflow: hidden;
           position: relative;
           img {
-            width: 100%;
-            object-fit: cover;
+            min-width: 100%;
+            min-height: 100%;
+            /* object-fit: cover; */
           }
+          
         }
         
         .active {
@@ -66,12 +70,16 @@
       .arrows {
         display: flex;
         justify-content: space-between;
-        opacity: 0.2;
+        opacity: 0.35;
         width: 100%;
         height: 100%;
         position: absolute;
         .arrow {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           background-color: $white;
+          width: 5vw;
           i{
             font-size: 48px;
             color: $gray;
@@ -131,31 +139,130 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: $green;
   z-index: 5;
 }
 
 
+.cover1 {
+  background-image: url('../../public/img/click2eat.PNG');
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 100%;
+}
+.cover2 {
+  background-image: url('../../public/img/click2eat_original.png');
+  width: 100%;
+  height: 100%;
+}
+.cover3 {
+  background-image: url('../../public/img/walfood.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 @media all and (max-width: 1024px) {
   #projects {
-      .container-custom {
-          .slider {
-              .b-carousel {
-                  .image {
-                      img {
-                          // dimensioni immagine carousel
-                          height: 35vh;
-                      }
-                  }
-              }
+    .container-custom {
+      .intestazione {
+          h2 {
+          }
+          hr {
+          }
+          img {
           }
       }
+      .slider {
+        .slider-text{
+          p{
+          }
+        }
+        .slide {
+          height: 35vh;
+          img {
+          }
+        }
+        .active {
+      }
+      }
+      .arrows {
+        .arrow {
+          width: 4vh;
+          i{
+          }
+        }
+      }
+      .discover {
+        hr {
+        }
+        a {
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  .pallini {
+    &.color {
+    }
+  }
+  .dots {
   }
 }
 
 @media all and (max-width: 768px) {
-
+  #projects {
+    .container-custom {
+      .intestazione {
+          h2 {
+          }
+          hr {
+          }
+          img {
+          }
+      }
+      .slider {
+        .slider-text{
+          p{
+          }
+        }
+        .slide {
+          height: 35vh;
+          img {
+          }
+        }
+        .active {
+      }
+      }
+      .arrows {
+        .arrow {
+          width: 4vh;
+          i{
+          }
+        }
+      }
+      .discover {
+        hr {
+        }
+        a {
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  .pallini {
+    &.color {
+    }
+  }
+  .dots {
+  }
 }
 
 @media all and (max-width: 480px) {
