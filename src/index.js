@@ -5,14 +5,15 @@ import './index.scss';
 import Navbar from './components/navbar/navbar';
 import Home from './views/home/home';
 import Footer from "./components/footer/footer"
+import Servizi from './views/servizi/servizi';
 
-import Full from "./views/servizi/full";
-import Individuals from "./views/servizi/individuals"
-import Companies from './views/servizi/companies';
-import Design from './views/servizi/design';
-import Support from './views/servizi/support';
-import ContentCreation from './views/servizi/content_creation';
-import Marketing from './views/servizi/marketing';
+// import Full from "./views/servizi/full/full";
+// import Individuals from "./views/servizi/individuals/individuals"
+// import Companies from './views/servizi/companies/companies';
+// import Design from './views/servizi/design/design';
+// import Support from './views/servizi/support';
+// import ContentCreation from './views/servizi/content_creation/content_creation';
+// import Marketing from './views/servizi/marketing/marketing';
 
 import Portfoliomore from './views/portfolio_more/portfolio_more';
 
@@ -25,6 +26,7 @@ ReactDOM.render(
     <Navbar />
     <Routes>
       <Route path="/" element={<Home/>} />
+      <Route path="/servizi/*" element={<Servizi/>} />
       {/* <Routes path="/services">
         <Route path="/full" element={<Full/>} />
         <Route path="/individuals" element={<Individuals/>}/>
@@ -34,14 +36,14 @@ ReactDOM.render(
         <Route path="/content-creation" element={<ContentCreation/>}/>
         <Route path="/marketing" element={<Marketing/>}/>
       </Routes> */}
-      <Route path="/full" element={<Full/>} />
+      {/* <Route path="/full" element={<Full/>} />
       <Route path="/individuals" element={<Individuals/>}/>
       <Route path="/companies" element={<Companies/>}/>
       <Route path="/design" element={<Design/>}/>
       <Route path="/support" element={<Support/>}/>
       <Route path="/content-creation" element={<ContentCreation/>}/>
       <Route path="/marketing" element={<Marketing/>}/>
-      <Route path="/discover_more" element={<Portfoliomore/>}/>
+      <Route path="/discover_more" element={<Portfoliomore/>}/> */}
     </Routes>
     <Footer/>
   </BrowserRouter>,

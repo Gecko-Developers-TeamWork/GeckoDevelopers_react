@@ -1,4 +1,4 @@
-import "./servizi.scss"
+import "../servizi.scss"
 /* import { getita_text } from "../../lingue/inglese"; */
 
 export default function Marketing() {
